@@ -175,7 +175,7 @@ namespace clap { namespace helpers {
       if (l == CheckingLevel::None)
          return;
 
-      if (!canUseThreadCheck() || isAudioThread())
+      if (!canUseThreadCheck() || !isAudioThread())
          return;
 
       std::ostringstream msg;
